@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="462201d9-6135-42ca-823c-d6c630493bbf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/extension/BypassExtension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/extension/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/extension/config/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/extension/core/Bypass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/extension/hanlder/ContextMenus.java" afterDir="false" />
-    </list>
+    <list default="true" id="462201d9-6135-42ca-823c-d6c630493bbf" name="Changes" comment="Init" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,10 +39,13 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "com.obiscr.chatgpt.settings.OpenAISettings"
+    "settings.editor.selected.configurable": "http.proxy"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\1ndex\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="462201d9-6135-42ca-823c-d6c630493bbf" name="Changes" comment="" />
@@ -79,6 +71,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
