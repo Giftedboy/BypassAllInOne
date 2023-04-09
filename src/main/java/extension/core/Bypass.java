@@ -69,19 +69,24 @@ public class Bypass {
             return false;
         }
         if(OriginPath.length()==0){
-            //根路径得走特殊逻辑
-
+            //根路径走特殊逻辑
             for(String PathRuler:ForbiddenPaths){
 
             }
             return false;
 
         }else{
-
-
             for(String PathRuler:ForbiddenPaths){
-
+                String NewPath = PathRuler.replace("$path",OriginPath);
+                Request = Request.withPath(NewPath);
+                short NewStatusCode = SendRequest(Request).statusCode();
+                //如果bypass了则直接return
+                if(OldStatusCode != NewStatusCode && NewStatusCode < 300){return true;}
             }
+
+            //额外再加一个特殊逻辑 /a/b/c../c 这种
+
+
             return false;
         }
     }
