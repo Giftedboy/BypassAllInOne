@@ -1,5 +1,6 @@
 package extension.hanlder;
 
+import burp.api.montoya.http.message.HttpRequestResponse;
 import burp.api.montoya.ui.contextmenu.ContextMenuEvent;
 import burp.api.montoya.ui.contextmenu.ContextMenuItemsProvider;
 import burp.api.montoya.ui.contextmenu.InvocationType;
@@ -30,22 +31,32 @@ public class ContextMenus implements ContextMenuItemsProvider {
         ));
         if(Display.contains(event.invocationType())){
             //
-            JMenuItem Bypass40X = new JMenuItem();
-            Bypass40X.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    new Thread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Bypass bypass = new Bypass(event.selectedRequestResponses(), Type.Bypass40X);
-                            bypass.Scan();
-                        }
-                    }).start();
-                }
-            });
+            JMenuItem Bypass40X = new JMenuItem("40X");
+            JMenuItem BypassSSRF = new JMenuItem("SSRF");
+            JMenuItem BypassCSRF = new JMenuItem("CSRF");
+            JMenuItem BypassCORS = new JMenuItem("CORS");
+            List<HttpRequestResponse> RequestResponses = event.selectedRequestResponses();
+            AddAction(Bypass40X,RequestResponses,Type.Bypass40X);
+            AddAction(BypassSSRF,RequestResponses,Type.BypassSSRF);
+            AddAction(BypassCSRF,RequestResponses,Type.BypassCSRF);
+            AddAction(BypassCORS,RequestResponses,Type.BypassCORS);
+
             MenuComponents.add(Bypass40X.getComponent());
+            MenuComponents.add(BypassCSRF.getComponent());
+            MenuComponents.add(BypassSSRF.getComponent());
+            MenuComponents.add(BypassCORS.getComponent());
+
         }
         return MenuComponents;
     }
 
+    private void AddAction(JMenuItem MenuItem,List<HttpRequestResponse> RequestResponses,Type BypassType){
+        MenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Bypass bypass = new Bypass(RequestResponses, BypassType);
+                bypass.Scan();
+            }
+        });
+    }
 }

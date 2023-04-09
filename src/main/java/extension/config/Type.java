@@ -2,9 +2,9 @@ package extension.config;
 
 public enum Type {
     Bypass40X("Bypass403"),
-    CSRF("CSRF"),
-    SSRF("SSRF"),
-    CORS("CORS");
+    BypassCSRF("CSRF"),
+    BypassSSRF("SSRF"),
+    BypassCORS("CORS");
 
     private final String TypeName;
 
