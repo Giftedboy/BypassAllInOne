@@ -5,7 +5,23 @@ import java.util.Map;
 
 public class Config {
     public static final String[] ForbiddenPaths = {
-            ""
+            "..;/$path$query",
+            "/%2e/$path$query",
+            "/$path/$query",
+            "/$path..;/$query",
+            "/$path/..;/$query",
+            "/$path%20$query",
+            "/$path%09$query",
+            "/$path%00$query",
+            "/$path.json$query",
+            "/$path.css$query",
+            "/$path.html$query",
+            "/$path?$query",
+            "/$path??$query",
+            "/$path$query#test",
+            "/$path/.$query",
+            "//$path//$query",
+            "/./$path/./$query",
     };
     public static final String[] ForbiddenHeaders = {
             "X-Custom-IP-Authorization",
@@ -74,5 +90,7 @@ public class Config {
             "X-Original-URL","/",
             "X-Rewrite-URL","/$path"
     ));
+
+
 
 }
