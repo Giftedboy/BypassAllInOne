@@ -287,6 +287,7 @@ public class Bypass {
         String HeadersValue = HeaderMaps.getOrDefault("Access-Control-Allow-Headers","");
         String MaxAgeValue = HeaderMaps.getOrDefault("Access-Control-Max-Age","");
 
+        //如果设置*是游览器将不会发送cookies，即使你的XHR设置了withCredentials，所以不匹配
         if(type==0 && Objects.equals(OriginValue, Host) && Objects.equals(CredentialsValue, "true")){
             BypassExtension.Api.repeater().sendToRepeater(Request,"CORSBypass");
             return true;

@@ -9,13 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="462201d9-6135-42ca-823c-d6c630493bbf" name="Changes" comment="bypass403">
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="462201d9-6135-42ca-823c-d6c630493bbf" name="Changes" comment="bypass cors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extension/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extension/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/extension/core/Bypass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extension/core/Bypass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extension/hanlder/ContextMenus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extension/hanlder/ContextMenus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +68,7 @@
       <updated>1680938383901</updated>
       <workItem from="1680938385215" duration="299000" />
       <workItem from="1680938695945" duration="2666000" />
-      <workItem from="1681542992138" duration="18369000" />
+      <workItem from="1681542992138" duration="19895000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1680942096007</created>
@@ -94,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681042623699</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="bypass cors">
+      <created>1681581076541</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681581076541</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +118,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
     <MESSAGE value="bypass403" />
-    <option name="LAST_COMMIT_MESSAGE" value="bypass403" />
+    <MESSAGE value="bypass cors" />
+    <option name="LAST_COMMIT_MESSAGE" value="bypass cors" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
